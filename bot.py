@@ -12,7 +12,7 @@ BOT_TOKEN = os.getenv("8676737582:AAGzbAPLFF782ian-RK-TdOKUOy0-eViCu8")
 CHAT_ID = os.getenv("6730612406")
 
 
-symbol = "XAUTUSDT" or "BTCUSDT"
+symbol = "XAUT/USDT" or "BTC/USDT"
 
 session = HTTP(
     testnet=True,
