@@ -3,20 +3,21 @@ import requests
 import pandas as pd
 from pybit.unified_trading import HTTP
 
-# ========== CONFIG ==========
-API_KEY = "1RSlgaz15wSfs5x3bP”
-API_SECRET = "m6OJFYQpBh7NaYu90v3987cXMRynzhX4YIaR”
+  #==========CONFIG==========
+import os
 
-BOT_TOKEN = “8676737582:AAGzbAPLFF782ian-RK-TdOKUOy0-eViCu8”
-CHAT_ID = "6730612406”
+API_KEY = os.getenv("1RSlgaz15wSfs5x3bP")
+API_SECRET = os.getenv("m6OJFYQpBh7NaYu90v3987cXMRynzhX4YIaR")
+BOT_TOKEN = os.getenv("8676737582:AAGzbAPLFF782ian-RK-TdOKUOy0-eViCu8")
+CHAT_ID = os.getenv("6730612406")
 
-symbol = "XAUUSD"
 
-session = HTTP(
+symbol = "XAUUSD" or "BTCUSD"
+
+session = HTTP()
     testnet=True,
     api_key=API_KEY,
     api_secret=API_SECRET
-)
 
 running = True
 last_update_id = 0
