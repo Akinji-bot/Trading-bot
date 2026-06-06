@@ -12,7 +12,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 
 
-symbol = "XAUT/USDT" or "BTC/USDT"
+symbol = XAUT/USDT or BTC/USDT
 
 session = HTTP
     testnet=True,
