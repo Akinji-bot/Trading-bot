@@ -12,12 +12,12 @@ BOT_TOKEN = os.getenv("8676737582:AAGzbAPLFF782ian-RK-TdOKUOy0-eViCu8")
 CHAT_ID = os.getenv("6730612406")
 
 
-symbol = "XAUUSD" or "BTCUSD"
+symbol = "XAUTUSDT" or "BTCUSDT"
 
-session = HTTP()
+session = HTTP(
     testnet=True,
     api_key=API_KEY,
-    api_secret=API_SECRET
+    api_secret=API_SECRET)
 
 running = True
 last_update_id = 0
